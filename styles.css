@@ -1,3 +1,13 @@
 .row {
     display: flex;
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    font-size: 100px;
+}

@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1 class="title">Tic-Tac-Toe</h1>
+    <div class="setup">
+        <input type="text" class="player1 name" value="Player 1">
+        <div class="player1 score">0</div>
+        <input type="text" class="player2 name" value="Player 2">
+        <div class="player2 score">0</div>
+    </div>
     <div class="grid">
         <div class="row">
             <div class="box" id="n1"></div>
@@ -24,6 +31,8 @@
             <div class="box" id="n9"></div>
         </div>
     </div>
+    <div class="message"></div>
+    <button class="reset">Reset</button>
     <script src="script.js"></script>
 </body>
 </html>
