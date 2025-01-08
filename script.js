@@ -1,8 +1,8 @@
 const gameBoard = (function () {
     const board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-    function play(player, x, y) {
-        board[x * 3 + y] = player;
+    function play(player, pos) {
+        board[pos] = player;
     }
 
     function checkWinner() {
@@ -38,12 +38,13 @@ const gameBoard = (function () {
         console.log("-------------");
     }
 
-    return { play, checkWinner, printBoard }
+    function showBoard() {
+        for (let i = 1; i <= 9; i++) {
+            document.querySelector("#n" + i).textContent = board[i - 1];
+        }
+    }
+
+    return { play, checkWinner, printBoard, showBoard }
 })();
 
-gameBoard.printBoard();
-gameBoard.play(1, 0, 1);
-gameBoard.play(1, 1, 1);
-gameBoard.play(1, 2, 1);
-console.log(gameBoard.checkWinner());
-gameBoard.printBoard();
+const grid = document.querySelector('grid');
