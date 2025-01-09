@@ -17,11 +17,14 @@ body {
     flex-wrap: wrap;
 }
 
+.container.outer {
+    gap: 100px;
+}
+
 .players {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 100px;
 }
 
 .players .box {
@@ -93,7 +96,6 @@ body {
 
 .reset {
     background-color: #cdaa7d;
-    outline: none;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
 }
