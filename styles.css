@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-right: 100px;
 }
 
 .players .box {
@@ -49,6 +50,10 @@ body {
     outline: none;
 }
 
+.player2 {
+    margin-bottom: 50px;
+}
+
 .title {
     text-align: center;
     font-size: 48px;
@@ -60,7 +65,6 @@ body {
     padding: 5px;
     outline: solid lightgreen 5px;
     border-radius: 10px;
-    margin-left: 100px;
     box-shadow: 0px 10px 20px;
 }
 
