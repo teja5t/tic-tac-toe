@@ -1,3 +1,69 @@
+
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 24px;
+}
+
+body {
+    background-color: #93C572	;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.players .box {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+}
+
+.players > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.players .score {
+    font-size: 36px;
+}
+
+.name {
+    width: 200px;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.name:focus {
+    outline: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+
+.grid {
+    background-color: #4F7942;
+    padding: 5px;
+    outline: solid lightgreen 5px;
+    border-radius: 10px;
+    margin-left: 100px;
+    box-shadow: 0px 10px 20px;
+}
+
 .row {
     display: flex;
 }
@@ -10,4 +76,21 @@
     align-items: center;
     border: solid black;
     font-size: 100px;
+    background-color: #cdaa7d;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px;
+    border: none;
 }
+
+.message {
+    margin: 50px;
+}
+
+.reset {
+    background-color: #cdaa7d;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+

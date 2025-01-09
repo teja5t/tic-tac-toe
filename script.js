@@ -70,16 +70,16 @@ const game = (function() {
     function setMessage(winner) {
         document.querySelector('button.reset').style.display = '';
         const message = document.querySelector('.message');
-        const player1score = document.querySelector(`.player1.score`);
-        const player2score = document.querySelector(`.player2.score`);
+        const player1score = document.querySelector(`.player1 .score`);
+        const player2score = document.querySelector(`.player2 .score`);
         
 
         if (winner === 'tie') {
             message.textContent = 'Tie.';
         }
         else {
-            player1 = document.querySelector('.player1.name').value;
-            player2 = document.querySelector('.player2.name').value;
+            player1 = document.querySelector('.player1 .name').value;
+            player2 = document.querySelector('.player2 .name').value;
 
             if (winner === 'X') {
                 player1score.textContent = +player1score.textContent + 1;
